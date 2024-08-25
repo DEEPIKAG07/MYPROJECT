@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrievanceAI</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>GrievanceAI</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#submit">Submit Grievance</a></li>
+                <li><a href="#track">Track Grievance</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="home">
+            <h2>Welcome to GrievanceAI</h2>
+            <p>An AI-powered system for efficient grievance lodging and tracking.</p>
+        </section>
+
+        <section id="submit">
+            <h2>Submit a Grievance</h2>
+            <form id="grievanceForm">
+                <textarea id="grievanceContent" rows="4" placeholder="Describe your grievance..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="track">
+            <h2>Track Your Grievance</h2>
+            <input type="text" id="grievanceId" placeholder="Enter Grievance ID">
+            <button id="trackButton">Track</button>
+            <div id="grievanceStatus"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GrievanceAI. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
