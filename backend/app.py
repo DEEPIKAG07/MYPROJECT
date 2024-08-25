@@ -6,7 +6,9 @@ from models.grievance import Grievance
 from services.grievance_service import process_grievance
 from services.analytics_service import generate_analytics
 from routes.admin import admin_bp
+from routes.analytics import analytics_bp
 app.register_blueprint(admin_bp)
+app.register_blueprint(analytics_bp)
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///grievanceai.db'
